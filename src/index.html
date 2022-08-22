@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+  @include('partials/head.html')
 
-@include('partials/head.html')
-
-<body class="page__body">
-<div class="site-container">
-  <header class="header" >
-    @include('partials/header.html')
-  </header>
-  <main class="main">
-    @include('partials/hero.html')
-    @include('partials/about.html')
-    @include('partials/services.html')
-    @include('partials/awards.html')
-    @include('partials/contacts.html')
-  </main>
-  <footer class="footer">
-    @include('partials/footer.html')
-  </footer>
-</div>
-</body>
-
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">@include('partials/header.html')</header>
+      <main class="main">
+        @include('partials/hero.html') @include('partials/about.html')
+        @include('partials/services.html') @include('partials/awards.html')
+        @include('partials/discuss.html') @include('partials/contacts.html')
+      </main>
+      <footer class="footer">@include('partials/footer.html')</footer>
+    </div>
+  </body>
 </html>
