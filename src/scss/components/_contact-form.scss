@@ -36,11 +36,11 @@
     transform: translate(118px, 68px);
 
     @media (max-width: 768px) {
-      background-image: url("../img/submit-btn-mob.png");
-      transform: translate(-50%, 80px);
       left: 50%;
       width: 280px;
       height: 50px;
+      background-image: url("../img/submit-btn-mobile.jpg");
+      transform: translate(-50%, 80px);
     }
   }
 
