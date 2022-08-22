@@ -18,8 +18,8 @@ function handleMarquee(){
       progress = progress-speed;
       if(progress <= elWidth*-1) {progress=0;}
       container.style.transform = 'translateX(' + progress + 'px)';
-      console.log(progress)
-      console.log(speed)
+      // console.log(progress)
+      // console.log(speed)
       container.style.transform += 'skewX(' + speed*0.4 + 'deg)';
 
       window.requestAnimationFrame(loop);
