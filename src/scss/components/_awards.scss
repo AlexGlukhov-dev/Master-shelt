@@ -1,0 +1,29 @@
+.awards {
+  &-container {
+    display: grid;
+    grid-template-rows: repeat(3, fit-content(100%));
+    gap: 70px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: 15px;
+      }
+
+      span {
+        max-width: 130px;
+        text-align: center;
+      }
+    }
+  }
+}

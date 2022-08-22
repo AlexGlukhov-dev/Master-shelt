@@ -1,0 +1,27 @@
+.services {
+  position: relative;
+  margin-bottom: 144px;
+
+  &-container {
+    position: relative;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 240px 345px 1fr;
+  }
+
+  &__info {
+    padding-top: 20px;
+
+    p:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__lists {
+    padding-top: 20px;
+
+    &__mark {
+      margin-bottom: 40px;
+    }
+  }
+}

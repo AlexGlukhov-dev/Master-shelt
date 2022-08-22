@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid var(--black-color);
+  width: 100%;
+
+  &__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__logo {
+    justify-self: left;
+    grid-column: 1 / 4;
+    max-width: 180px;
+  }
+
+  &__nav {
+    justify-self: right;
+    grid-column: 4 / 10;
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__separator {
+    justify-self: right;
+    grid-column: 10 / 11;
+    width: 1px;
+    height: 100px;
+    background-color: var(--black-color);
+  }
+
+  &__phone {
+    justify-self: right;
+    grid-column: 11 / 13;
+    font: var(--header-phone-font);
+  }
+}

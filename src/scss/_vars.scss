@@ -1,0 +1,27 @@
+:root {
+  // base
+  --content-width: 1130px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --black-color: #000;
+  --light-color: #fff;
+  --hero-background: #f3f4f4;
+  --accent-color: #226df6;
+
+  // fonts
+  --font-Anonymous-Pro-Bolt: "AnonymousProBolt", sans-serif;
+  --font-Anonymous-Pro-Bolt-Italic: "AnonymousProBoltItalic", sans-serif;
+  --font-Anonymous-Pro-Regular: "AnonymousProRegular", sans-serif;
+
+  // fonts-vars
+  --main-font: 400 16px / 24px var(--font-Anonymous-Pro-Regular);
+  --main-title-font: 700 40px / 50px var(--font-Anonymous-Pro-Bolt);
+  --title-number: 400 20px / 30px var(--font-Anonymous-Pro-Regular);
+  --header-phone-font: 700 16px / 30px var(--font-Anonymous-Pro-Bolt);
+  --hero-title-font: 700 100px / 104px var(--font-Anonymous-Pro-Bolt);
+  --hero-info-font: 400 24px / 30px var(--font-Anonymous-Pro-Regular);
+  --services-info-font: 700 48px / 64px var(--font-Anonymous-Pro-Bolt-Italic);
+  --marquee-font: 700 68px / 70px var(--font-Anonymous-Pro-Bolt);
+}
