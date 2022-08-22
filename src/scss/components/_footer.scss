@@ -2,9 +2,28 @@
   border-top: 1px solid var(--black-color);
   padding: 26px 0;
 
-  &-container {
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__copy,
+  &__policy {
+    font-family: 'AnonymousProRegular', serif;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  &__copy {
+    color: var(--black-color);
+  }
+
+  &__policy {
+    color: var(--accent-color);
   }
 }
