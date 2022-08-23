@@ -1,5 +1,9 @@
 .discuss {
-  margin-bottom: 240px;
+  margin-bottom: 150px;
+
+  @include small-tablet {
+    margin-bottom: 122px;
+  }
 }
 
 .form-wrapper {

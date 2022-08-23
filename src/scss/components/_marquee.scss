@@ -31,3 +31,46 @@
     background-color: var(--black-color);
   }
 }
+
+/*******************************/
+
+
+.marquee-infinite {
+  margin: 30px auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee-infinite div {
+  display: flex;
+  width: 200%;
+  animation: marquee-infinite 5s linear infinite;
+}
+
+.marquee-infinite h1 {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-infinite span {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.marquee-infinite img {
+  width: 20%;
+}
+
+.marquee-infinite:hover div {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
