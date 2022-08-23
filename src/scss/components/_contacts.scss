@@ -7,6 +7,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+    }
   }
 
   &__image {
@@ -15,12 +20,24 @@
     grid-row: 1/3;
     transform: translateX(90px);
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      justify-self: center;
+      grid-column: 1 /1;
+      grid-row: 3/4;
+      transform: translateX(0);
+    }
   }
 
   &__title {
     align-self: center;
     grid-column: 1/3;
     grid-row: 1/2;
+
+    @media (max-width: 1024px) {
+      grid-column: 1/1;
+      margin-bottom: 24px;
+    }
   }
 
   &__info {
@@ -34,7 +51,11 @@
 
       span {
         margin-right: 40px;
-        width: 80px;
+        min-width: 80px;
+
+        @include small-tablet {
+          margin-right: 5px;
+        }
       }
 
       h3,
