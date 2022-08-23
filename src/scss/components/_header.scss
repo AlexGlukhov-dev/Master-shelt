@@ -15,15 +15,60 @@
     justify-self: left;
     grid-column: 1 / 4;
     max-width: 180px;
+
+    @include small-tablet {
+      grid-column: 1 / 10;
+    }
   }
 
   &__nav {
     justify-self: right;
     grid-column: 4 / 10;
+    transition: 0.5s ease-in-out;
+
+    &-item {
+      @include small-tablet {
+        font-weight: 700;
+        font-size: 24px;
+        color: #fff;
+      }
+    }
 
     &-item:not(:last-child) {
       margin-right: 30px;
+
+      @include small-tablet {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
     }
+
+    @include small-tablet {
+      position: fixed;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 60px;
+      height: 100vh;
+      background-color: var(--accent-color);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-100%);
+      inset: 0;
+    }
+
+    @include tablet {
+      grid-column: 4 / 9;
+    }
+  }
+
+  &__nav.menu--active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
   }
 
   &__separator {
@@ -32,11 +77,32 @@
     width: 1px;
     height: 100px;
     background-color: var(--black-color);
+
+    @include small-tablet {
+      display: none;
+    }
+
+    @include tablet {
+      grid-column: 9 /10;
+    }
   }
 
   &__phone {
     justify-self: right;
     grid-column: 11 / 13;
     font: var(--header-phone-font);
+
+    @include small-tablet {
+      display: none;
+    }
+
+    @include tablet {
+      grid-column: 10 / 13;
+    }
+  }
+
+  @include small-tablet {
+    padding: 10px;
+    min-height: 54px;
   }
 }

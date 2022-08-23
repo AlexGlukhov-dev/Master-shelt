@@ -13,6 +13,11 @@
   color: #000;
   background-color: transparent;
   cursor: pointer;
+  justify-self: end;
+
+  @include small-tablet {
+    grid-column: 11 / 13;
+  }
 
   &::before,
   &::after {
@@ -42,6 +47,7 @@
     background-color: currentColor;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;
+
   }
 
   &--active {
@@ -49,12 +55,14 @@
       top: 50%;
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      background-color: #fff;
     }
 
     &::after {
       top: 50%;
       transform: rotate(-45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      background-color: #fff;
     }
 
     .burger__line {
