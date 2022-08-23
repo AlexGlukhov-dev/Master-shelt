@@ -61,6 +61,11 @@
       column-gap: 0;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, fit-content(100%));
+      padding-top: 100px;
+    }
+
+    &-image {
+      display: none;
     }
 
     &__title {
