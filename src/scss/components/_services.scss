@@ -26,6 +26,8 @@
   }
 
   @media (max-width: 1024px) {
+    margin-bottom: 80px;
+
     &-container {
       column-gap: 0;
       grid-template-columns: 1fr;
