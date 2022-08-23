@@ -22,7 +22,6 @@ if(awardsSlider) {
       },
       768: {
         slidesPerView: 3,
-        slidesPerGroup: 3,
         spaceBetween: 28
       },
       1024: {

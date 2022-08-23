@@ -24,4 +24,21 @@
       margin-bottom: 40px;
     }
   }
+
+  @media (max-width: 1024px) {
+    &-container {
+      column-gap: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, fit-content(100%));
+    }
+
+    &__info {
+      padding-bottom: 35px;
+      border-bottom: 1px solid var(--black-color);
+    }
+
+    &__lists {
+      padding-top: 35px;
+    }
+  }
 }
