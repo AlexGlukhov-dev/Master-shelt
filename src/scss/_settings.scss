@@ -73,6 +73,19 @@ img {
   font: var(--title-number);
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    padding-left: 20px;
+    font: var(--mobile-title-font);
+  }
+
+  .section-title::before {
+    left: -20px;
+    top: 0;
+    font: var(--main-font);
+  }
+}
+
 .btn-reset {
   border: none;
   padding: 0;
