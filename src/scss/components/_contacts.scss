@@ -23,12 +23,17 @@
     grid-row: 2/3;
     cursor: pointer;
 
+
     &::before {
       content: "";
       position: absolute;
       background: rgb(34 109 246 / 70%);
       filter: blur(100px);
       inset: 0;
+
+      //@include tablet {
+      //  background: none;
+      //}
     }
 
     @media (max-width: 1024px) {
