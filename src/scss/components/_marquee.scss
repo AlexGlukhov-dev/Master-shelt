@@ -32,13 +32,10 @@
   }
 }
 
-/*******************************/
-
-
 .marquee-infinite {
-  margin: 30px auto;
-  max-width: 100%;
   overflow: hidden;
+  margin: 30px auto 64px;
+  max-width: 100%;
 }
 
 .marquee-infinite div {
@@ -48,14 +45,14 @@
 }
 
 .marquee-infinite h1 {
-  white-space: nowrap;
   width: 100%;
+  white-space: nowrap;
 }
 
 .marquee-infinite span {
-  width: 100%;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .marquee-infinite img {
@@ -70,6 +67,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }

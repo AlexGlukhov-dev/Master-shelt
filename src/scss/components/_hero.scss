@@ -39,10 +39,19 @@
     }
 
     .hero__img {
+      position: relative;
       align-self: center;
       justify-self: center;
       grid-column: 2/3;
       grid-row: 2/4;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: rgb(34 109 246 / 70%);
+        filter: blur(100px);
+        inset: 0;
+      }
 
       &:hover {
         cursor: pointer;
@@ -60,6 +69,7 @@
 
   @media (max-width: 1024px) {
     padding-top: 40px;
+    margin-bottom: 136px;
 
     &-container {
       position: relative;
@@ -94,7 +104,7 @@
 
       .hero__img {
         position: absolute;
-        top: -40px;
+        top: 28px;
         justify-self: center;
         grid-column: 1/2;
         grid-row: 4/5;
