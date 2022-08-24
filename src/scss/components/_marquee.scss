@@ -45,14 +45,14 @@
 }
 
 .marquee-infinite h1 {
-  width: 100%;
   white-space: nowrap;
+  width: 100%;
 }
 
 .marquee-infinite span {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 .marquee-infinite img {
@@ -67,7 +67,6 @@
   0% {
     transform: translateX(0%);
   }
-
   100% {
     transform: translateX(-50%);
   }
