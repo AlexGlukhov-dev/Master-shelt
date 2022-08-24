@@ -76,7 +76,7 @@ const scroll = new SmoothScroll('a[href*="#"]');
 //   console.log(e.detail.dir);
 // });
 
-// import { validateForms } from './functions/validate-forms';
+import { validateForms } from './functions/validate-forms';
 // const rules1 = [...];
 
 // const afterForm = () => {
