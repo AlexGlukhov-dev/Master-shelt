@@ -1,0 +1,50 @@
+.locomotive-top {
+  padding: 40px 0 80px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-one {
+    align-self: start;
+    justify-self: end;
+    grid-column: 1/2;
+    transform: translateX(60px);
+  }
+
+  &-two {
+    align-self: end;
+    justify-self: end;
+    grid-column: 2/3;
+    transform: translateY(120px);
+  }
+
+  &-three {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &-one {
+      display: none;
+    }
+
+    &-two {
+      display: none;
+    }
+
+    &-three {
+      display: block;
+      justify-self: center;
+      min-width: 280px;
+    }
+
+  }
+}
