@@ -14,15 +14,16 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 0 20px 45px;
-    max-width: 860px;
     width: 100%;
+    min-height: 292px;
+    max-width: 860px;
   }
 
   &__info {
     display: -webkit-box;
     align-items: center;
-    width: 100%;
     margin-bottom: 20px;
+    width: 100%;
 
     &-item {
       display: flex;
@@ -34,8 +35,8 @@
       }
 
       span {
-        max-width: 130px;
         min-height: 60px;
+        max-width: 130px;
         text-align: center;
       }
     }
