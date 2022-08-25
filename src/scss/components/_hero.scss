@@ -45,6 +45,17 @@
       grid-column: 2/3;
       grid-row: 2/4;
 
+      img {
+        animation: 8s linear 0s normal none infinite running rot;
+      }
+
+      &::after {
+        content: url("../../img/arrow.png");
+        position: absolute;
+        top: 80px;
+        left: 80px;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -69,6 +80,7 @@
 
   @media (max-width: 1024px) {
     padding-top: 40px;
+    padding-bottom: 50px;
     margin-bottom: 136px;
 
     &-container {
@@ -108,12 +120,21 @@
         justify-self: center;
         grid-column: 1/2;
         grid-row: 4/5;
-        width: 280px;
+        width: 250px;
       }
 
       .hero__mail {
         display: none;
       }
     }
+  }
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

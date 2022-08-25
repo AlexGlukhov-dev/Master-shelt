@@ -22,7 +22,17 @@
     grid-column: 2/3;
     grid-row: 2/3;
     cursor: pointer;
+    
+    img {
+      animation: 8s linear 0s normal none infinite running rot;
+    }
 
+    &::after {
+      content: url("../../img/arrow.png");
+      position: absolute;
+      top: 80px;
+      left: 80px;
+    }
 
     &::before {
       content: "";
