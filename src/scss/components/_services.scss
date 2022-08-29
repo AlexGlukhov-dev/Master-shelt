@@ -1,4 +1,5 @@
 .services {
+  //height: 100vh;
   position: relative;
   //margin-bottom: 144px;
 
@@ -35,8 +36,8 @@
     }
 
     &__info {
-      padding-bottom: 35px;
       border-bottom: 1px solid var(--black-color);
+      padding-bottom: 35px;
     }
 
     &__lists {

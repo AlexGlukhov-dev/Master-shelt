@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.remove('modal--visible');
         document.body.classList.remove('lock')
         document.body.style.paddingRight = 0 + 'px';
-        document.body.style.overflow = 'auto';
         fixedBlocks.forEach(block => block.style.paddingRight = 0)
       });
     }

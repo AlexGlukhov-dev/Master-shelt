@@ -3,22 +3,23 @@
   @include('partials/head.html')
 
   <body class="page__body">
-    <div class="site-container">
-      <header class="header fixed-block">@include('partials/header.html')</header>
-      <main class="main">
-        @include('partials/hero.html')
-        @include('partials/about.html')
-        @include('partials/locomotive-top.html')
-        @include('partials/services.html')
-        @include('partials/projects.html')
-        @include('partials/events.html')
-        @include('partials/awards.html')
-        @include('partials/discuss.html')
-        @include('partials/marquee.html')
-        @include('partials/contacts.html')
-        @include('partials/UI-html-templates/modal.html')
+    <div class="site-container"  data-scroll-container>
+      <header class="header fixed-block" data-scroll-section>@include('partials/header.html')</header>
+      <main class="main" >
+<!--        <div class="main__gradient"></div>-->
+          @include('partials/hero.html')
+          @include('partials/about.html')
+          @include('partials/locomotive-top.html')
+          @include('partials/services.html')
+          @include('partials/projects.html')
+          @include('partials/events.html')
+          @include('partials/awards.html')
+          @include('partials/discuss.html')
+          @include('partials/marquee.html')
+          @include('partials/contacts.html')
+          @include('partials/UI-html-templates/modal.html')
+      <footer class="footer" data-scroll-section>@include('partials/footer.html')</footer>
       </main>
-      <footer class="footer">@include('partials/footer.html')</footer>
     </div>
   </body>
 </html>

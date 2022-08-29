@@ -2,6 +2,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 100;
   border-bottom: 1px solid var(--black-color);
   width: 100%;
 
@@ -27,6 +28,10 @@
     transition: 0.5s ease-in-out;
 
     &-item {
+      &:hover {
+        cursor: pointer;
+      }
+
       @include small-tablet {
         font-weight: 700;
         font-size: 24px;
@@ -105,4 +110,8 @@
     padding: 10px;
     min-height: 54px;
   }
+}
+
+.content {
+  position: relative;
 }

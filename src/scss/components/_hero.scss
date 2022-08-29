@@ -1,9 +1,23 @@
 .hero {
+  //position: relative;
   padding-top: 190px;
   background-image: url("../../img/hero-background.png");
   background-position: top left;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: var(--hero-background);
+
+  //&::before {
+  //  content: "";
+  //  position: fixed;
+  //  left: 0;
+  //  right: 0;
+  //  top: 0;
+  //  bottom: 0;
+  //  background-image: url("../../img/hero-background.png");
+  //  background-position: top left;
+  //  background-repeat: no-repeat;
+  //}
 
   &-container {
     display: grid;
@@ -45,23 +59,23 @@
       grid-column: 2/3;
       grid-row: 2/4;
 
-      img {
-        animation: 8s linear 0s normal none infinite running rot;
-      }
-
-      &::after {
-        content: url("../../img/arrow.png");
-        position: absolute;
-        top: 80px;
-        left: 80px;
-      }
-
       &::before {
         content: "";
         position: absolute;
         background: rgb(34 109 246 / 70%);
         filter: blur(100px);
         inset: 0;
+      }
+
+      &::after {
+        content: url("../../img/arrow.png");
+        position: absolute;
+        left: 80px;
+        top: 80px;
+      }
+
+      img {
+        animation: 8s linear 0s normal none infinite running rot;
       }
 
       &:hover {
@@ -79,14 +93,14 @@
   }
 
   @media (max-width: 1024px) {
+    margin-bottom: 136px;
     padding-top: 40px;
     padding-bottom: 50px;
-    margin-bottom: 136px;
 
     &-container {
       position: relative;
-      padding: 100px 20px;
       grid-template-columns: 1fr;
+      padding: 100px 20px;
 
       .hero__subtitle {
         grid-column: 1/2;
@@ -134,6 +148,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

@@ -65,8 +65,8 @@ import { enableScroll } from './functions/enable-scroll';
 // const rellax = new Rellax('.rellax');
 
 // Подключение плавной прокрутки к якорям
-import SmoothScroll from 'smooth-scroll';
-const scroll = new SmoothScroll('a[href*="#"]');
+// import SmoothScroll from 'smooth-scroll';
+// const scroll = new SmoothScroll('a[href*="#"]');
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';
@@ -84,3 +84,18 @@ import { validateForms } from './functions/validate-forms';
 // };
 
 // validateForms('.form-1', rules1, afterForm);
+
+
+import LocomotiveScroll from 'locomotive-scroll';
+
+export const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
+  repeat: true,
+  tablet: {
+    smooth: true,
+  },
+  smartphone: {
+    smooth: true,
+  }
+});
